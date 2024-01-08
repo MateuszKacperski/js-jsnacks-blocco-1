@@ -10,3 +10,21 @@ const frutto = 'pesca';
 frigo.push(frutto);
 //Stampo in console
 console.table(frigo);
+
+
+let hasWatermelon = false;
+
+for (let i=0; i < frutto.length && !hasWatermelon; i++){
+    if(frutto[i] === 'cocomero'){
+        hasWatermelon = true;
+    }
+}
+let message;
+
+if(hasWatermelon){
+    message = 'Trovato ! Devo solo preparare il coctail.';
+}else{
+    message = 'Oh no devo uscire a comprare il cocomero!'
+}
+
+console.log(message);

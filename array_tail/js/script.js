@@ -2,6 +2,9 @@ console.log('Js ok');
 
 //Chiedo un numero all'utente
 const richiesta = parseInt(prompt('Dammi un numero da a tua scelta che sia maggiore di 6', '10'));
+if(isNaN(richiesta) || richiesta < 6 || richiesta > 100){
+    alert('Devi inserire un numero da 6 a 100');
+}
 //Stampo il numero inserito dall'utente 
 console.log(richiesta);
 
